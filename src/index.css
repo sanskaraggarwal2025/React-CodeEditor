@@ -1,0 +1,54 @@
+/* src/CodeEditor.css */
+
+.code-editor {
+  position: relative;
+}
+
+.highlighted-code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: black;
+  /* Ensure the highlighted code is visible */
+}
+
+.code-input {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: monospace;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  color: transparent;
+  /* Hide text in textarea */
+  caret-color: black;
+  /* Set cursor color to black */
+}
+
+.code-input::selection {
+  background: rgba(0, 0, 255, 0.3);
+}
+
+.highlighted-code pre {
+  margin: 0;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.highlighted-code code {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
