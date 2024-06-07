@@ -1,7 +1,7 @@
-/* src/CodeEditor.css */
-
 .code-editor {
   position: relative;
+  width: 100%;
+  height: 700px;
 }
 
 .highlighted-code {
@@ -12,17 +12,20 @@
   z-index: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  background-color: white;
   color: black;
-  /* Ensure the highlighted code is visible */
+  padding: 10px;
+  /* Ensure padding matches the textarea */
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Prevent overflow */
 }
 
 .code-input {
   position: relative;
-  background-color: transparent;
   z-index: 1;
   width: 100%;
-  height: 400px;
+  height: 100%;
   padding: 10px;
   font-size: 14px;
   font-family: monospace;
@@ -30,10 +33,12 @@
   border-radius: 4px;
   outline: none;
   resize: none;
+  background: none;
   color: transparent;
-  /* Hide text in textarea */
   caret-color: black;
-  /* Set cursor color to black */
+  line-height: 1.5;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .code-input::selection {
@@ -42,13 +47,18 @@
 
 .highlighted-code pre {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: monospace;
 }
 
 .highlighted-code code {
   display: block;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-family: monospace;
+  font-size: 14px;
 }
