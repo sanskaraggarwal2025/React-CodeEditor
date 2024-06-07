@@ -16,11 +16,8 @@
   box-sizing: border-box;
   overflow: hidden;
   font-size: 14px;
-  /* Ensure this matches the textarea */
   font-family: monospace;
-  /* Ensure this matches the textarea */
   line-height: 1.5;
-  /* Ensure this matches the textarea */
   color: black;
 }
 
@@ -31,9 +28,7 @@
   height: 100%;
   padding: 10px;
   font-size: 14px;
-  /* Ensure this matches the highlighted code */
   font-family: monospace;
-  /* Ensure this matches the highlighted code */
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
@@ -42,7 +37,6 @@
   color: transparent;
   caret-color: black;
   line-height: 1.5;
-  /* Ensure this matches the highlighted code */
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -57,11 +51,8 @@
   white-space: pre-wrap;
   word-wrap: break-word;
   line-height: 1.5;
-  /* Ensure this matches the textarea */
   font-size: 14px;
-  /* Ensure this matches the textarea */
   font-family: monospace;
-  /* Ensure this matches the textarea */
 }
 
 .highlighted-code code {
@@ -69,7 +60,5 @@
   white-space: pre-wrap;
   word-wrap: break-word;
   font-family: monospace;
-  /* Ensure this matches the textarea */
   font-size: 14px;
-  /* Ensure this matches the textarea */
 }
